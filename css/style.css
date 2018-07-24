@@ -1,0 +1,94 @@
+html{
+  font-size : 62.5%;
+  min-width: 350px;
+}
+*{
+  padding : 0;
+  margin: 0;
+}
+body {
+  background-color : #90A4AE;
+  font-size : 1.6rem;
+  margin: 2rem;
+}
+.content__row{
+  width: 100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows : 100%:
+}
+.survey__question{
+  text-align: right;
+}
+.survey__answer{
+  text-align:left;
+}
+.survey__question,
+.survey__answer{
+  padding : 2rem;
+  padding-bottom : 0px;
+}
+.survey__form{
+  width : 90%;
+  margin : 0px auto;
+  background-color : #E0F2F1;
+  border-radius : 2rem;
+}
+.survey__description,
+.survey__title{
+  text-align : center;
+  padding: 3rem;
+  
+}
+.survey__description{
+  font-size : 4rem;
+  font-weight : 200;
+  
+}
+.survey__title{
+  font-size : 6rem;
+  letter-spacing : 2rem;
+  text-transform:uppercase;
+}
+.btn__sendit{
+  text-align : center;
+  margin: 0 auto;
+}
+.btn__sendit input {
+  padding : 7px 40px;
+  border-radius : 10%;
+  margin-top : 20px;
+  margin-bottom: 20px;
+  background-color: #2196F3;
+  color : white;
+}
+.form__radio--item{
+  border-style:none;
+  width: 100%;
+  padding: .7rem;
+}
+input[type=text],
+input[type=email],
+input[type=number]{
+  width : 90%;
+  height : 2.4rem;
+}
+select {
+  width : 60%;
+}
+
+@media screen and (max-width: 520px) {
+  html{
+    font-size: 40%;
+  }
+  body{
+    font-size: 250%;
+  }
+  .content__row{
+    display: block;
+  }
+  .survey__question{
+     text-align: left;
+  }
+
+}
