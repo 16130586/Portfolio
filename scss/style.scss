@@ -1,119 +1,110 @@
-* {
+$background-primary-color: #dae4fe;
+$background-secondary-color: #a9c1fc;
+$border-deep-color: #366ef8;
+$deep-purple-color : #df4663;
+*{
   padding: 0;
-  margin: 0;
+  margin:0;
   box-sizing: border-box;
 }
-
-html {
+html{
   font-size: 62.5%;
 }
-
-body {
+body{
   font-size: 1.6rem;
-  background-color: #dae4fe;
+  background-color: $background-primary-color;
 }
-
-#welcome-section {
+#welcome-section{
   width: 80vw;
   height: 100vh;
   padding: 2rem;
   margin: 0 auto;
+  
+ 
 }
-
-.navbar {
+.navbar{
   position: fixed;
   top: 0;
   width: 100%;
   text-align: right;
   z-index: 10000;
   background-color: inherit;
-  box-shadow: 0px 1px 10px 1px rgba(54, 110, 248, 0.8);
+  box-shadow: 0px 1px 10px 1px rgba(54,110,248,0.8);
 }
-
-.navbar__link {
+.navbar__link{
   margin-right: 1rem;
   padding: 2rem;
   text-decoration: none;
   text-align: center;
   font-size: 2rem;
-  display: inline-block;
+  display:inline-block;
   text-transform: uppercase;
 }
-
-.section--welcome {
+.section--welcome{
   margin-top: 6rem;
-  background-image: linear-gradient(rgba(65, 46, 38, 0), rgba(0, 0, 0, 0.8)), url(https://sv1.uphinhnhanh.com/images/2018/07/28/abandoned-astrophotography-barn-1254518.jpg);
+  background-image: linear-gradient(rgba(65, 46, 38 , 0) , rgba(0, 0,0,0.8)),url(https://sv1.uphinhnhanh.com/images/2018/07/28/abandoned-astrophotography-barn-1254518.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
 }
-
-.header__slogan {
+.header__slogan{
   position: absolute;
-  top: 70%;
+  top:70%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform : translate(-50% , -50%);
+  
 }
-
 .slogan--large,
-.slogan--medium {
+.slogan--medium{
   color: #bad6fc;
   line-height: 1.45;
   text-align: center;
 }
-
-.slogan--large {
-  text-transform: uppercase;
+.slogan--large{
+  text-transform : uppercase;
   font-size: 4rem;
-  font-weight: 700;
-  letter-spacing: 1rem;
+  font-weight : 700;
+  letter-spacing : 1rem;
 }
-
-.slogan--medium {
+.slogan--medium{
   letter-spacing: 3rem;
 }
-
-.project__container {
+.project__container{
   width: 70%;
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns : 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 3rem;
-  background-color: #a9c1fc;
+  background-color: $background-secondary-color;
   border-radius: 1rem;
 }
-
-.project-tile {
+.project-tile{
   padding: 1rem;
   border: 1px solid transparent;
 }
-
-.project__image {
+.project__image{
   width: 100%;
   padding: 1rem;
   border-bottom: 1px solid blue;
 }
-
-.project__name {
+.project__name{
   padding: 1rem;
   text-align: center;
 }
-
-.project__link {
+.project__link,
+{
   color: red;
 }
-
-.profile-container {
+.profile-container{
   text-align: center;
   margin-top: -2rem;
-  color: #df4663;
+  color: $deep-purple-color;
   font-weight: 700;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
-
-.profile-link {
+.profile-link{
   padding: 2rem;
   border: 1px solid transparent;
   background-color: #ccc;
@@ -121,30 +112,26 @@ body {
   margin-bottom: 1rem;
   text-decoration: none;
 }
-
-#contacts {
+#contacts{
   text-align: center;
   margin-bottom: 2rem;
 }
-
-.header {
+.header{
   text-align: center;
   margin: 4rem auto;
   letter-spacing: 2rem;
   text-transform: uppercase;
   font-size: 2rem;
 }
-
-.icon {
-  display: inline-block;
+.icon{
+  display:inline-block;
   color: red;
   margin-right: 2rem;
+  a{
+   color: deeppink; 
+  }
 }
-.icon a {
-  color: deeppink;
-}
-
-.footer {
+.footer{
   text-align: center;
   padding: 2rem;
   line-height: 1.45;
@@ -153,45 +140,41 @@ body {
   color: white;
   padding: 2rem;
 }
-
 @media only screen and (max-width: 600px) {
-  .project__container {
+  .project__container{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
-
-  .profile-container {
-    font-size: 2.5rem;
-    text-transform: uppercase;
+  .profile-container{
+  font-size: 2.5rem;
+  text-transform: uppercase;
   }
-
-  .profile-link {
-    padding: 1rem;
+  .profile-link{
+  padding: 1rem;
   }
-
-  .slogan--large {
-    font-size: 3rem;
-    letter-spacing: 0.75rem;
-  }
-
-  .slogan--medium {
-    letter-spacing: 1.75rem;
-  }
+  .slogan--large{
+  font-size: 3rem;
+  letter-spacing : 0.75rem;
 }
+.slogan--medium{
+  letter-spacing: 1.75rem;
+  }
+  
+  
+} 
 @media only screen and (max-width: 480px) {
-  .profile-container {
-    font-size: 1.75rem;
+  .profile-container{
+  font-size: 1.75rem;
   }
-
-  .profile-link {
-    padding: .5rem;
+  .profile-link{
+  padding: .5rem;
   }
-
-  .navbar__link {
-    margin-right: .75rem;
-    padding: .5rem;
-    text-align: center;
-    font-size: 1.5rem;
-    display: block;
+  .navbar__link{
+  margin-right: .75rem;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  display:block;
   }
+  
 }

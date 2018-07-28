@@ -4,13 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Fork Me! FCC: Test Suite Template</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  
   
   
       <link rel="stylesheet" href="css/style.css">
@@ -21,201 +15,119 @@
 <body>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
- <h1 id="title" class="survey__title">Survey Form</h1>
-<main>
-  <form id="survey-form" class="survey__form">
-    <p id="description" class="survey__description"><em>Let us know about who you are and your look and feel<em>
-    </p>
-    <div class="content__row">
-      <div class="survey__question">
-        <label id="name-label" for="name">
-          *Name
-        </label>
-      </div>
-      <div class="survey__answer">
-        <input type="text" id="name" required placeholder="Your name here">
-      </div>
-      
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<nav id="navbar" class="navbar">
+  <a class="navbar__link" href="#welcome-section">
+    Home
+  </a>
+  <a class="navbar__link" href="#projects">
+    Projects
+  </a>
+  <a class="navbar__link" href="#contacts">
+    Contacts
+  </a>
+</nav>
+<section id="welcome-section" class="section section--welcome">
+  <div class="header__slogan">
+    <h1 class="slogan--large">
+     Hi, I'm That
+    </h1>
+    <h2 class="slogan--medium">
+       A young web developer.
+    </h2>
+  </div>
+</section>
+<section id="projects" class="section section--projects">
+  <header class="header">
+    <h2 class="section__header">
+      My Projects
+    </h2>
+  </header>
+  <div class="project__container">
+    <div class="project-tile">
+      <figure>
+        <img class="project__image" src="https://sv1.uphinhnhanh.com/images/2018/07/28/1a3070.png">
+        <figcaption class="project__name">
+          <a class="project__link" href="https://codepen.io/16130586/full/EpXEbZ/" target="_blank">
+          <label >
+            Landing Page
+          </label>
+          </a>
+        </figcaption>
+      </figure>
     </div>
-    
-    <div class="content__row">
-      <div class="survey__question">
-        <label id="email-label" for="email">
-          *Email
-        </label>
-      </div>
-      <div class="survey__answer">
-        <input id="email" type="email" required placeholder="Your email here">
-      </div>
-      
+    <div class="project-tile">
+      <figure>
+        <img class="project__image" src="https://sv1.uphinhnhanh.com/images/2018/07/28/24b175.png">
+        <figcaption class="project__name">
+          <a class="project__link" href="https://codepen.io/16130586/full/Owxwdw/" target="_blank">
+          <label >
+            Technical Page
+          </label>
+          </a>
+        </figcaption>
+      </figure>
     </div>
-    
-    <div class="content__row">
-      <div class="survey__question">
-        <label id="number-label" for="number">
-          *Age
-        </label>
-      </div>
-      <div class="survey__answer">
-        <input id="number" type="number" required min="10" max="125" placeholder="Your age here">
-      </div>
-      
+    <div class="project-tile">
+      <figure>
+        <img class="project__image" src="https://sv1.uphinhnhanh.com/images/2018/07/28/326fec.png">
+        <figcaption  class="project__name">
+          <a class="project__link" href="https://codepen.io/16130586/full/YjVjJR/" target="_blank">
+          <label>
+            Survey Form
+          </label>
+          </a>
+        </figcaption>
+      </figure>
     </div>
-    
-    <div class="content__row">
-      <div class="survey__question">
-        <label>
-          How did you hear about this website?
-        </label>
-      </div>
-      <div class="survey__answer">
-        <select id="dropdown">
-          <option>
-            Social Media
-          </option>
-          <option>
-            Advertising
-          </option>
-          <option>
-            Search Engine
-          </option>
-          <option>
-            Friend
-          </option>
-          <option>
-            Other
-          </option>
-        </select>
-      </div>
-      
+    <div class="project-tile">
+      <figure>
+        <img class="project__image" src="https://sv1.uphinhnhanh.com/images/2018/07/28/435082.png">
+        <figcaption class="project__name">
+           <a class="project__link" href="https://codepen.io/16130586/full/BPWMYO/" target="_blank">
+          <label >
+            Tribute Page
+          </label>
+          </a>
+        </figcaption>
+      </figure>
     </div>
-    
-    <div class="content__row">
-      <div class="survey__question">
-        <label>
-          What browser do you use?
-        </label>
-      </div>
-      <div class="survey__answer">
-        <fieldset class="form__radio--item">
-          <input type="radio" name="browser" value="chrome">
-          <label>
-            Google Chrome
-          </label>
-        </fieldset>
-        
-        <fieldset class="form__radio--item">
-          <input type="radio" name="browser" value="firefox">
-          <label>
-           Firefox
-          </label>
-        </fieldset>
-        
-         <fieldset class="form__radio--item">
-          <input type="radio" name="browser" value="ie">
-          <label>
-           IE
-          </label>
-        </fieldset>
-        
-        <fieldset class="form__radio--item">
-          <input type="radio" name="browser" value="safari">
-          <label>
-           Safari
-          </label>
-        </fieldset>
-        
-        <fieldset class="form__radio--item">
-          <input type="radio" name="browser" value="other">
-          <label>
-           Other
-          </label>
-        </fieldset>
-      </div>
+  </div>
+  <div class="profile-container">
+    <a id="profile-link" class="profile-link" href="https://github.com/16130586" target="_blank">
+      Explore all projects
+    </a>
+  </div>
+</section>
+<section id="contacts">
+  <header class="header">
+    <h2 class="section__header">
+      Contact me via
+    </h2>
+  </header>
+  <div>
+    <div>
+      <a href="#">
+        <div class="icon">
+          <a href="https://codepen.io/16130586/full/XBzNpE/" target="_blank">
+            <i class="fab fa-free-code-camp fa-5x"></i>
+          </a>
+        </div>
+         <div class="icon">
+           <a href="https://github.com/16130586" target="_blank">
+            <i class="fab fa-github-square fa-5x"></i>
+           </a>
+        </div>
+      </a>
     </div>
-  
-    <div class="content__row">
-      <div class="survey__question">
-        Which device did you use to access the website?
-      </div>
-      <div class="survey__answer">
-        <fieldset class="form__radio--item">
-          <input  type="checkbox" value="des/lap">
-          <label>
-            Desktop/Laptop
-          </label>
-        </fieldset>
-        <fieldset class="form__radio--item">
-          <input type="checkbox" value="pad">
-          <label>
-            Pad devices
-          </label>
-        </fieldset>
-        <fieldset class="form__radio--item">
-          <input type="checkbox" value="mobile">
-          <label>
-            Mobile devices
-          </label>
-        </fieldset>
-      </div>
-    </div>
-    
-    <div class="content__row">
-      <div class="survey__question">
-        <label>
-          Are you satisfied that you found out the website?
-        </label>
-      </div>
-      <div class="survey__answer">
-        <fieldset class="form__radio--item">
-          <input name="userfeeling" type="radio" value="very-satify">
-          <label>
-            Very Satisfied
-          </label>
-        </fieldset>
-         <fieldset class="form__radio--item">
-          <input name="userfeeling" type="radio" value="satify">
-          <label>
-            Satisfied
-          </label>
-        </fieldset>
-         <fieldset class="form__radio--item">
-          <input name="userfeeling" type="radio" value="neutral">
-          <label>
-            Neutral
-          </label>
-        </fieldset>
-         <fieldset class="form__radio--item">
-          <input name="userfeeling" type="radio" value="unsatify">
-          <label>
-            Unsatisfied
-          </label>
-        </fieldset>
-         <fieldset class="form__radio--item">
-          <input name="userfeeling" type="radio" value="very-unsatify">
-          <label>
-            Very Unsatisfied
-          </label>
-        </fieldset>
-      </div>
-    </div>
-  
-    <div class="content__row">
-      <div class="survey__question">
-        <label>
-          Give any advice or comment for us!
-        </label>
-      </div>
-      <div class="survey__answer">
-        <textarea>
-        </textarea>
-      </div>
-    </div>
-    <div class="btn__sendit">
-      <input id="submit" type="submit" value="Send it">
-    </div>
-  </form>
-</main>
+  </div>
+</section>
+<footer class="footer">
+  <p>
+    Create&copy; by That-Nguyen.
+  </p>
+  <p>Mail: nnt09021998@gmail.com</p>
+</footer>
   
   
 
